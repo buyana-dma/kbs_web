@@ -1,7 +1,7 @@
 .body{
 	text-align: center;
 }
-.hero-section-background {
+#hero-section-background {
 	width: 1366px;
 	height: 721px;
 	padding: 8px 8px 8px 8px;
@@ -106,7 +106,7 @@
 	background: #000000;
 	border-radius: 6px 6px 6px 6px;
 }
-.vertical-menu-1 {
+.vertical-menu{
 	width: 161px;
 	height: 163px;
 	background: #ffffff;
