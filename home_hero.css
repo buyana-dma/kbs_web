@@ -33,37 +33,48 @@
 
 .wrapper-two {
     background-image: url(img/bg2.jpg);
-    animation: slideTwoAnim 20s infinite;
+    animation: slideAnim 20s infinite;
 }
 
 .wrapper-three {
-    background-image: url("https://unsplash.com/photos/a-tractor-is-plowing-a-field-of-yellow-flowers-azrFSceGdRY");
-    animation: slideThreeAnim 20s infinite;
+    background-image: url(img/img5.jpg);
+    animation: slideAnim 20s infinite;
 }
 
 /* Styles for the text */
-.wrapper-text {
-  font: 700 40px/1.4 Roboto;
+h3{
+  color: white;
+  text-shadow: #000;
+  font-size: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 150px;
+  justify-content:flex-start;
+  margin: 3rem;
+  margin-top: 20%;
+  margin-bottom: 0;
+  width: 40%;
+  padding: 2rem;
+  padding-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+p{
+  color: white;
+  font-size: larger;
+  margin: 3rem;
+  margin-top: 0;
+  width: 50%;
+  padding: 2rem;
+  padding-top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Animations */
-@keyframes slideTwoAnim {
+@keyframes slideAnim {
     0%{opacity:0;}
     17%{opacity:0;}
     33%{opacity:1;}
     50%{opacity:1;}
     67%{opacity:0;}
-    100%{opacity:0;}
-}
-
-@keyframes slideThreeAnim {
-    0%{opacity:0;}
-    50%{opacity:0;}
-    67%{opacity:1;}
-    83%{opacity:1;}
     100%{opacity:0;}
 }

@@ -1,4 +1,10 @@
 @import url("home_hero.css");
+@import url("home_case.css");
+@import url("home_invest.css");
+@import url("home_info.css");
+@import url("home_news.css");
+@import url("home_about.css");
+@import url("home_support.css");
 
 :root {
     --primary-color:#032552 ;
@@ -12,6 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    align-items: center;
 }
 
 

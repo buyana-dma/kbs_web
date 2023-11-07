@@ -1,0 +1,70 @@
+@import url(home_fin.css);
+
+.news{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 10%;
+
+    & .special{
+        width: 40%;
+        margin: auto;
+        
+        & h3{
+            width: 80%;
+            font: x-large;
+            font-weight: 700;
+            margin-top: 5%;
+            margin-bottom: 0; 
+        }
+
+        & p{
+            font-size: small;
+            font-weight: 600;
+            width: 80%;
+            margin-bottom: 5px;
+        }
+    }
+
+    & .weekly{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        margin: auto;
+
+        & .date{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 20px;
+            font-size: small;
+
+            & time{
+                background-color: #89cff0;
+                border: none;
+                border-radius: 5px;
+                padding: 8px;
+            }
+        }
+
+        
+
+        & .wnews{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            & h4{
+                font-size: medium;
+                margin-bottom: 0;
+            }
+
+            & p{
+                font-size: x-small;
+                margin-top: 10px;
+            }
+        }
+        
+    }
+}

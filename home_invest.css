@@ -1,0 +1,39 @@
+@import url("home_fin.css");
+
+.invest-section-background{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+    padding: 5% 0 ;
+    justify-content: space-around;
+    
+    & h2{
+        color: white;
+        font-size: 2.75rem;
+        font-weight: 700;
+        margin: auto;
+    }
+
+    & p{
+        color: white;
+        opacity: 0.8;
+        margin: 20px auto;
+        word-wrap: normal;
+    }
+
+    & .read-more {
+        background-color: var(--secondary-color);
+        border: none;
+        border-color: var(--secondary-color);
+        border-radius: 5px;
+        font-size: medium;
+        color: white;
+        margin-top: 5%;
+        padding: 10px 20px;  
+        margin: auto;
+    }
+
+}

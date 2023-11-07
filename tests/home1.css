@@ -1,0 +1,437 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles for the entire body */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #edf0f4;
+}
+
+/* Navigation style */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: #1f3968;
+    height: 64px;
+}
+nav img{
+    width: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font: bold;
+}
+nav ul li a:hover{
+    color: #e9a825;
+    transition: .3s;
+}
+nav i{
+    padding: 15px;
+}
+
+/* Hero Section style */
+.hero-section-background {
+    width: 100%;
+    height: 80vh;
+    padding: 0;
+    background: #507ba8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-background .hero-section-top-text {
+    opacity: 80%;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.hero-section-background .hero-big-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 1.28;
+}
+
+.hero-section-background .hero-section-bottom-text {
+    opacity: 80%;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Case study container style */
+.case-study-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Case article style */
+.case-study-container article {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.case-study-container .case-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.case-study-container .case-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.28;
+    margin-top: 10px;
+}
+
+.case-study-container p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Investment block style */
+.invest-section-background {
+    width: 80%;
+    height: 40vh;
+    background: #032552;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invest-section-background .invest-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.28;
+}
+
+.invest-section-background .invest-section-text {
+    opacity: 80%;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.invest-section-background .invest-now-button {
+    width: 163px;
+    height: 42px;
+    padding: 10px;
+    background: #e9a826;
+    color: #ffffff;
+    border: 2px solid #e9a826;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Infographic section style */
+.info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.info article {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+.info .chart {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info .benefit-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.info .benefit-paragraph {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* News section style */
+section h4 {
+    display: none;
+}
+
+.news{
+    display: flex;
+    flex-direction: row;
+    margin: 15vh;
+}
+
+/* Special and Weekly articles style */
+.special, .weekly {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.special .special-news-title {
+    color: #032453;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.special .special-news-text {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.weekly h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.date-of-news-background-box {
+    width: 98px;
+    height: 27px;
+    background: #7899c2;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 27px;
+}
+
+.date {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.news-title {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.news-paragraph {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* About us section style */
+
+section h4 {
+    display: none;
+}
+
+.about{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-about-us {
+    width: 70%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.about-us-title {
+    color: #032552;
+    font-weight: 700;
+    font-size: large;
+    line-height: 1.28;
+    margin-top: 10px;
+}
+
+.text-italic {
+    font-style: italic;
+    color: #032552;
+    font-size: xx-small;
+    line-height: 1.5;
+}
+
+.text-paragraph {
+    width: 60%;
+    font-weight: 400;
+    font-size: small;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Support section style */
+.support{
+    display: flex;
+    flex-direction: row;
+    margin: 15vh;
+}
+.support h3{
+    display: none;
+}
+
+.gov-sup, .com-sup {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gov-sup p, .com-sup p {
+    width: 20vw;
+    font-weight: 600;
+    font-size: small;
+    line-height: 1.2;
+    color: #032552;
+    text-align: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.gov-sup article, .com-sup article {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.rule{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    border-style:groove;
+    border-radius: 5px;
+    box-shadow: #333333;
+    width: 25vw;
+}
+
+button {
+    padding: 10px 20px;
+    background: #e9a826;
+    color: #ffffff;
+    border: 2px solid #e9a826;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+button:hover {
+    background: #ffdb58;
+    border-color: #ffdb58;
+}
+
+.gov-sup ul, .com-sup ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.gov-sup ul li, .com-sup ul li {
+    font-weight: 400;
+    font-size: x-small;
+    line-height: 1.5;
+    margin: 5px 0;
+    color: #032552;
+
+}
+
+/* To top icon style */
+i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #032552;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+i:hover {
+    background: #e9a826;
+    border-color: #e9a826;
+}
+
+/* Footer section style */
+footer {
+    background: #042357;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+footer article {
+    width: 23%;
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+}

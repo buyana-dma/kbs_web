@@ -1,0 +1,482 @@
+/* Define custom properties for colors and sizes */
+:root {
+    --primary-color: #f4a900;
+    --secondary-color: #45505a;
+    --font-color: #000000;
+    --bg-color: #32373c;
+    --footer-bg-color: #23282e;
+    --btn-color: #f4a900;
+    --btn-bg-color: #ffffff;
+    --border-color: #2d3237;
+    --title-font-size: 20px;
+    --title-line-height: 1.5;
+    --read-more-btn-font-size: 14px;
+    --read-more-btn-line-height: 1.2;
+    --container-width: 80%;
+    --case-title-height: calc(var(--case-title-font-size) * var(--case-title-line-height));
+    --read-more-btn-height: calc(var(--read-more-btn-font-size) * var(--read-more-btn-line-height));
+}
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles for the entire body */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background: #edf0f4;
+}
+
+/* Navigation style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f3968;
+    height: 64px;
+    padding: 0 20px;
+
+    img {
+        width: 30px;
+        border-radius: 5px;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 10px 20px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    color: #e9a825;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    i {
+        padding: 15px;
+    }
+}
+
+/* Hero Section style */
+.hero-section-background {
+    width: 100%;
+    min-height: 80vh;
+    background: url(img/1.jpg) no-repeat center center fixed;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-section-top-text {
+        opacity: 80%;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .hero-big-text {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 1.28;
+    }
+
+    .hero-section-bottom-text {
+        opacity: 80%;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.4;
+    }
+}
+
+/* Case study container style using Grid and Flexbox for vertical alignment */
+.case-study-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 40px 0 40px 0;
+
+
+    /* article:nth-child(2) {
+        margin: 0 20px 0 20px;
+    } */
+
+    article {
+        width: calc(30%-5px);
+        height: auto;
+        text-align: center;
+        background-color: var(--bg-color);
+        border-radius: 10px;
+
+
+
+        .case-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .case-title {
+            font-weight: 700;
+            font-size: var(--title-font-size);
+            line-height: var(--title-line-height);
+            margin-top: 10px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.4;
+        }
+    }
+}
+
+
+/* Investment block style */
+.invest-section-background {
+    width: 80%;
+    min-height: 40vh;
+    background: #032552;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .invest-title {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1.28;
+    }
+
+    .invest-section-text {
+        opacity: 80%;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .invest-now-button {
+        width: 163px;
+        height: 42px;
+        padding: 10px;
+        background: var(--btn-color);
+        color: #ffffff;
+        border: 2px solid var(--btn-color);
+        border-radius: 3px;
+        font-weight: 700;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* Infographic section style */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+
+    article {
+        width: calc(30% - 20px);
+        text-align: center;
+        padding: 20px;
+        background-color: var(--bg-color);
+        border-radius: 10px;
+
+        .chart {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .benefit-title {
+            font-weight: 700;
+            font-size: var(--title-font-size);
+            line-height: var(--title-line-height);
+            margin-top: 10px;
+        }
+
+        .benefit-paragraph {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+}
+
+/* News section style using Flexbox and media queries */
+.news {
+    display: flex;
+    flex-direction: row;
+    margin: 15vh;
+
+    .special {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+
+    /* Define styles for a single news block */
+    .weekly {
+        width: calc(60% - 20px);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+
+        /* Define media query for small screens */
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+
+            .date-of-news-background-box {
+                width: 98px;
+                height: 27px;
+                background: #7899c2;
+                border-radius: 8px;
+                text-align: center;
+                line-height: 27px;
+            }
+
+            .news-title {
+                font-weight: 700;
+                font-size: 20px;
+                margin: 15px 0;
+            }
+
+            .news-paragraph {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 1.5;
+            }
+        }
+
+        /* Define styles for date background box */
+
+    }
+}
+
+/* Define media query for small screens */
+@media (max-width: 768px) {
+    .sup {
+        width: 100%;
+    }
+}
+
+/* Support section style using Flexbox and media queries */
+.support {
+    display: flex;
+    flex-direction: row;
+    margin: 10vh;
+
+    /* Define styles for the government support block */
+    & .sup {
+        width: calc(50%);
+        background-color: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+
+
+        & .inner-sup {
+            display: flex;
+            flex-flow: row wrap;
+            border: #000000;
+            border-radius: 10px;
+        }
+
+        & p {
+            width: 50%;
+            font-weight: 600;
+            font-size: small;
+            line-height: 1.2;
+            color: #032552;
+            text-align: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        & article {
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+            & .rule {
+                display: flex;
+                flex-direction: row;
+                margin-left: 20px;
+                border-style: groove;
+                border-radius: 5px;
+                box-shadow: #333333;
+            }
+        }
+
+        & ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            border: 3px solid #000000;
+
+            & li {
+                font-weight: 400;
+                font-size: x-small;
+                line-height: 1.5;
+                margin: 5px 0;
+                color: #032552;
+            }
+        }
+    }
+}
+
+/* To top icon style
+i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: #032552;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background: #e9a826;
+    }
+} */
+
+
+/* Style the about us section */
+.about {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .image-about-us {
+        width: 70%;
+        height: auto;
+        background: #000000;
+        border-radius: 20px;
+    }
+
+
+    .about-us-title {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .text-italic {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    .text-paragraph {
+        width: 80%;
+        margin: 20px 0 30px 70px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* Footer section style */
+footer {
+    background: #042357;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+
+    article {
+        width: 23%;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background: var(--btn-color);
+    color: #ffffff;
+    border: 2px solid var(--btn-color);
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffdb58;
+    border-color: #ffdb58;
+}
